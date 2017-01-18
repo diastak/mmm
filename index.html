@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+    <style> 
+
+</style>
+</head>
+
+<body>
+<h1>Experta en Matematicas</h1>
+<div id="example1">
+
+</div>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<p>Dale click al boton para generar los 6 numeros y el numero de tres cifras a averiguar.</p>
+<button id="f" onclick="myFunction()">Generar numeros</button>
+<p></p>
+<table>
+  <tr>
+    <th>1</th>
+    <th> 2</th>
+    <th>3</th>
+    <th> 4</th>
+    <th> 5</th>
+    <th> 6</th>
+    <th>Numero a buscar</th>
+  </tr>
+  <tr>
+    <td id="demo"></td>
+    <td id="demo2"></td>
+    <td id="demo3"></td>
+    <td id="demo4"></td>
+    <td id="demo5"></td>
+    <td id="demo6"></td>
+    <td id="demo7"></td>
+  </tr>
+  
+    
+  
+</table>
+
+
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = Math.floor(Math.random() * 4) + 1;
+    document.getElementById("demo2").innerHTML = Math.floor(Math.random() * 3) + 5;
+    document.getElementById("demo3").innerHTML = Math.floor(Math.random() * 2) + 8;
+    document.getElementById("demo4").innerHTML = Math.floor(Math.random() * 24) + 10;
+    document.getElementById("demo5").innerHTML = Math.floor(Math.random() * 34) + 33;
+    document.getElementById("demo6").innerHTML = Math.floor(Math.random() * 34) + 66;
+    document.getElementById("demo7").innerHTML =Math.floor(Math.random() * 500)+500;
+}
+</script>
+
+
+<p>Amanda licenciada en matematicas por la universidad de Malaga es experta en numeros.Te presenta su nuevo juego !Calcula el NUMERO!.</p>
+<p></p>
+<p>Tienes que conseguir el numero exacto o lo mas cercano que puedas . Suerte!</p>
+
+    <script src="phonegap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+   
+    
+</body>
+
+</html>
